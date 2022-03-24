@@ -1,0 +1,348 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: black;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html, body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* пошел код */
+
+._container {
+	max-width: 972px;
+	margin: 0 auto;
+}
+
+/* Шапка */
+header {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+	width: 100%;
+	padding: 16px 0;
+}
+
+.topbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 8px;
+}
+
+.topbar_right {
+	display: flex;
+	align-items: center;
+}
+
+.topbar_right div {
+	margin-left: 27px;
+}
+
+.sign_in {
+	border: 1px solid #E0E0E0;
+	box-sizing: border-box;
+	border-radius: 2px;
+	padding: 12px 18px;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 12px;
+}
+
+@media (max-width: 575px) {
+	.basket {
+		display: none;
+	}
+
+	.sign_in {
+		margin-right: 8px;
+	}
+}
+
+/* Основной блок */
+.content_block {
+	margin-top: 56px;
+}
+
+/* Поиск */
+.search_line {
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 2px;
+	font-size: 16px;
+	color: #626262;
+	border-bottom: 1px solid rgb(98, 98, 98, .5);
+	opacity: 0.5;
+}
+
+input[type="text"]:focus {
+	outline: none;
+}
+
+/* Карточки товаров */
+.product_card {
+	width: 100%;
+	padding: 8px;
+}
+
+.product_card_photo {
+	height: auto;
+	width: 100%;
+}
+
+h1 {
+	font-size: 22px;
+	padding-bottom: 16px;
+}
+
+h2 {
+	font-size: 16px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+	padding-top: 20px;
+	padding-bottom: 12px;
+}
+
+.product_card_cat {
+	font-size: 14px;
+	color: #626262;
+	padding-bottom: 12px;
+}
+
+.product_card_price {
+	font-size: 13px;
+	padding-bottom: 24px;
+}
+
+/* Подвал */
+footer {
+	margin-top: 80px;
+	background: #262626;
+	color: #FFFFFF;
+}
+
+footer a {
+	color: #FFFFFF;
+	font-size: 13px;
+}
+
+.footer_block {
+	padding: 32px 0;
+	border-bottom: 1px solid rgb(255, 255, 255, .4);
+}
+
+.footer_img {
+	margin: 8px 0;
+}
+
+#lang_selector {
+	margin-bottom: 32px;
+}
+
+#lang_select {
+	width: 227px;
+	padding: 8px 12px;
+	font-size: 13px;
+	color: #FFFFFF;
+	border-radius: 2px;
+	background: #3B3B3B;
+	outline: none;
+}
+
+#lang_select:hover {
+	background: #2e2e2e;
+}
+
+.lang_select_field {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0;
+}
+
+.lang_select_field div {
+	display: flex;
+	align-items: center;
+}
+
+#lang_select_field_label {
+	margin-left: 16px;
+}
+
+#arrow {
+	width: 16px;
+}
+
+#lang_select_list {
+	width: 227px;
+	font-size: 13px;
+	color: #FFFFFF;
+	border-radius: 2px;
+	background: #3B3B3B;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+}
+
+.lang_select_option {
+	padding: 8px 0;
+	display: flex;
+	padding: 8px 12px;
+}
+
+.lang_select_option_label {
+	margin-left: 12px;
+}
+
+.lang_select_option img {
+	width: 20px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.lang_select_option:hover {
+	background: #2e2e2e;
+}
+
+@media (max-width: 768px) {
+	#lang_select {
+		width: 160px;
+	}
+
+	#lang_select_list {
+		width: 160px;
+	}
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.hashtag {
+	font-size: 16px;
+}
+
+.span_green {
+	color: #49A144;
+}
+
+.social {
+	padding-top: 16px;
+	margin-bottom: 32px;
+}
+
+.social a {
+	margin-right: 8px;
+}
+
+.links p {
+	padding-bottom: 24px;
+}
+
+.download_links {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.download_links img {
+	padding: 0 16px;
+}
+
+.padding_links_text {
+	font-size: 11px;
+}
+
+#bottom_block {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+/* Кнопка вверх */
+.button_up {
+	position:fixed;
+	bottom:24px;
+	right:16px;
+}
+
+@media (max-width: 575px) {
+	.button_up img {
+		width: 64px;
+		height: 64px;
+	}
+}
+
+/* Карточка ресторана */
+.card_header {
+	height: 364px;
+	background:  center no-repeat url("../img/bg_pushkin1.png");
+	background-size: 100% auto;
+}
+
+@media (max-width: 1124px) {
+	.card_header {
+		background-size: auto 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.card_header {
+		background:  center no-repeat url("../img/bg_pushkin2.png");
+	}
+}
+
+@media (max-width: 576px) {
+	.card_header {
+		background:  center no-repeat url("../img/bg_pushkin3.png");
+		height: 255px;
+		background-size: 100% auto;
+	}
+}
+
+@media (max-width: 320px) {
+	.card_header {
+		background-size: auto 100%;
+	}
+}
+
+.card_header_info {
+	padding: 80px 0;
+}
+
+.card_header_info_content {
+
+}
